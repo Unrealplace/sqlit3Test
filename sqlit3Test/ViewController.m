@@ -28,7 +28,15 @@
     
     [self.view addSubview:btn];
     
+    UIButton * btn1=[[UIButton alloc]init];
+    btn1.backgroundColor=[UIColor redColor];
+    btn1.frame=self.view.bounds;
     
+    
+    
+    
+    [self.view addSubview:btn1];
+
     
     
 }
