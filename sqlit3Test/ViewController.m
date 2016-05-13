@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DataManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+}
+- (IBAction)open:(id)sender {
+    [[DataManager shared] openDataBase];
+    
+}
+- (IBAction)create:(id)sender {
+    [[DataManager shared] createTable];
+}
+
+- (IBAction)add:(id)sender {
+    [[DataManager shared] insertDataWith:@"liyang" andInt:24];
+    
+}
+- (IBAction)update:(id)sender {
+    [[DataManager shared] updateDataWith:@"yang" andInt:24];
+    
+}
+- (IBAction)select:(id)sender {
+    [[DataManager shared] select];
+    
+}
+- (IBAction)delete:(id)sender {
+    [[DataManager shared] deleteDataWith:@"yang"];
+}
+- (IBAction)close:(id)sender {
+    
+    [[DataManager shared] closeDataBase];
 }
 
 - (void)didReceiveMemoryWarning {
