@@ -19,6 +19,13 @@
     [super viewDidLoad];
     
     
+    UIButton * btn=[[UIButton alloc]init];
+    btn.backgroundColor=[UIColor redColor];
+    
+    
+    
+    
+    
 }
 - (IBAction)open:(id)sender {
     [[DataManager shared] openDataBase];
