@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     
-    
+    UIButton * btn=[[UIButton alloc]init];
     
     
     
