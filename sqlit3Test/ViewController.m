@@ -20,7 +20,7 @@
     
     
     UIButton * btn=[[UIButton alloc]init];
-    
+    btn.backgroundColor=[UIColor redColor];
     
     
     
